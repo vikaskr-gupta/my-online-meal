@@ -1,0 +1,254 @@
+/* CSS Reset */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html{
+    scroll-behaviour: smooth;
+}
+
+/* CSS Variables */
+:root{
+    --navbar-height: 60px;
+}
+
+/* Navigation Bar */
+#navbar {
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+
+#navbar::before {
+    content: "";
+    background-color:black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+/* Logo and Image */
+#logo{
+    margin: 36px 39px;
+}
+
+#logo img{
+    height: 74px;
+    margin: -30px -32px;
+}
+
+/* Navigation Bar : List Styling */
+#navbar ul{
+    font-family: 'Lobster', cursive;
+    display: flex;
+}
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 6px 21px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover{
+    text-decoration: underline;
+    color: rgb(255, 6, 6);
+    /* background-color: white; */
+}
+
+/* HOME SECTION */
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 32px 200px;
+    height: 363px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before{
+    content: "";
+    position: absolute;
+    background: url('Img/Background.jpg') no-repeat center center/cover;
+    height: 510px;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: -1;
+    opacity: 1.0;
+}
+
+#home h1 {
+    color: white;
+    text-align: center;
+    font-size: 3.3rem;
+    font-family: 'Lobster', cursive;
+}
+
+#home p {
+    font-family: 'Lobster', cursive;
+    color: white;
+    text-align: center;
+    font-size: 1.0rem;
+}
+
+/* SERVICES SECTION */
+#services{
+    margin: 34px;
+    display: flex;
+}
+
+#services .box{
+    border: 2px solid rgb(66, 21, 21);
+    margin: 9px;
+    padding: 8px 33px;
+    margin: 2px 6px;
+    margin-bottom:20px;
+    border-radius: 23px;
+    background-color:#f9f7f7;
+}
+
+#services .box img{
+    height: 165px;
+    display: block;
+    margin: auto;
+}
+
+#services .box p{
+    font-family: 'Lobster', cursive;
+    justify-content: center;
+    text-align: center;
+}
+
+/* CLIENTS SECTION */
+#client-section{
+    font-family: 'Lobster', cursive;
+    position: relative;
+}
+
+#client-section::before{
+    content: "";
+    position: absolute;
+    background: url('Img/bgd2.jpg')no-repeat center center/cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.6;
+}
+
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.client-item{
+    padding: 3px;
+}
+
+#clients img{
+    height: 124px;
+}
+
+/* CONTACT SECTION */
+#contact{
+    position: relative;
+}
+
+#contact::before{
+    content:"";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url(Img/contactus.jpg) no-repeat center center/cover;
+}
+
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+
+.h-primary-center{
+    font-family: 'Lobster', cursive;
+    font-size: 2.6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+#contact-box form{
+    width: 40%;
+}
+
+#contact-box label{
+    font-family: 'Lobster', cursive;
+    font-size: 1.11rem;
+}
+
+#contact-box input{
+    font-family: 'Lobster', cursive;
+}
+
+footer{
+    background: black;
+    color: white;
+    padding: 9px 20px;
+}
+
+/* UTILITY CLASSES */
+.h-primary{
+    font-size: 2.6rem;
+    padding: 12px;
+}
+
+.h-secondry{
+    font-size: 1.6rem;
+    padding: 12px;
+}
+
+.btn{
+    font-family: 'Lobster', cursive;
+    padding: 3px 9px;
+    border: 2px solid rgb(171 154 154);
+    background-color: #02010182;
+    color: white;
+    font-size: 0.8rem;
+    border-radius: 6px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.btn:hover{
+    color: rgb(197, 75, 4);
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Lobster', cursive;
+}
